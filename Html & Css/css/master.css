@@ -201,7 +201,7 @@ ul {
 }
 
 @media(max-width:767px) {
-    .header .main-na {
+    .header .main-nav {
         margin: auto;
     }
 }
@@ -1062,6 +1062,8 @@ ul {
     height: 30px;
     background-color: #EEE;
     position: relative;
+    overflow: hidden;
+    border-radius: 6px;
 }
 
 .ourskills .skills .skill .the-progress span {
@@ -1070,6 +1072,8 @@ ul {
     height: 30px;
     left: 0;
     top: 0;
+    border-radius: 6px;
+    transition: calc( var(--main-transition) + 0.2s);
 }
 
 
@@ -1196,9 +1200,10 @@ ul {
 .events img {
     max-width: 400px;
 }
+
 @media(max-width:767px) {
     .events img {
-        max-width: 325px;
+        max-width: 350px;
     }
 }
 
@@ -1218,8 +1223,8 @@ ul {
     border: 1px solid #d4d4d4;
     border-radius: 6px;
     text-align: center;
-    width: 75px;
     transition: var(--main-transition);
+    width: 100px;
 }
 
 .events .info .time .unit:hover,
